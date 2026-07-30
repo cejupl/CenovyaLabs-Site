@@ -1,0 +1,64 @@
+---
+import { entity } from '../config';
+import { brands } from '../data/brands';
+
+const year = new Date().getFullYear();
+const copyrightRange = year > entity.founded ? `${entity.founded}-${year}` : `${year}`;
+---
+
+<footer class="site-footer">
+  <div class="container py-16 sm:py-20">
+    <div class="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div class="max-w-xs">
+        <p class="footer-wordmark">Cenovya</p>
+        <p class="mt-4 text-sm leading-relaxed text-[#9fb0a5]">
+          {entity.tagline}
+        </p>
+      </div>
+
+      <nav aria-label="Brands">
+        <p class="eyebrow text-[#7e9187]">Brands</p>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          {
+            brands.map((brand) => (
+              <li>
+                <a href={brand.url} class="footer-link" rel="noopener">
+                  {brand.name}
+                </a>
+              </li>
+            ))
+          }
+          <li>
+            <a href="https://hoofandclaw.org" class="footer-link" rel="noopener">Hoof &amp; Claw</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Company">
+        <p class="eyebrow text-[#7e9187]">Company</p>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="/about" class="footer-link">About</a></li>
+          <li><a href="/contact" class="footer-link">Contact</a></li>
+          <li>
+            <a href={`mailto:${entity.emails.general}`} class="footer-link">{entity.emails.general}</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Legal">
+        <p class="eyebrow text-[#7e9187]">Legal</p>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="/legal/privacy" class="footer-link">Privacy</a></li>
+          <li><a href="/legal/terms" class="footer-link">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div
+      class="mt-14 flex flex-col gap-3 border-t border-white/10 pt-7 text-xs text-[#8b9d92] sm:flex-row sm:items-center sm:justify-between"
+    >
+      <p>&copy; {copyrightRange} {entity.legalName}. All rights reserved.</p>
+      <p>{entity.state}, USA</p>
+    </div>
+  </div>
+</footer>

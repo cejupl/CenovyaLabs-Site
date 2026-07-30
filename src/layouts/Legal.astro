@@ -1,0 +1,26 @@
+---
+import Base from './Base.astro';
+import { legalEffectiveDate } from '../config';
+
+interface Props {
+  title: string;
+  description: string;
+  heading: string;
+}
+
+const { title, description, heading } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <section class="container pb-14 pt-20 sm:pt-28">
+    <p class="eyebrow">Legal</p>
+    <h1 class="display display--page mt-6">{heading}</h1>
+    <p class="prose-muted mt-6 text-sm">Effective {legalEffectiveDate}</p>
+  </section>
+
+  <section class="container pb-24 sm:pb-32">
+    <div class="legal measure border-t border-line pt-12">
+      <slot />
+    </div>
+  </section>
+</Base>

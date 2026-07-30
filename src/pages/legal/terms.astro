@@ -1,0 +1,54 @@
+---
+import Legal from '../../layouts/Legal.astro';
+import { entity } from '../../config';
+---
+
+<Legal
+  title="Terms of Use - Cenovya Labs"
+  description="Terms for the cenovyalabs.com website. Nothing is sold here; apps are distributed and refunded through Apple and Google."
+  heading="Terms of Use"
+>
+  <h2>1. This site</h2>
+  <p>
+    cenovyalabs.com is an informational site about {entity.legalName} and its products. By using it
+    you agree to these terms.
+  </p>
+
+  <h2>2. Nothing is sold here</h2>
+  <p>
+    Our apps are distributed through the Apple App Store and Google Play. Any purchase, including
+    in-app purchases, is made through Apple or Google, and refunds are handled by them under their
+    policies, not by {entity.legalName}. Each app has its own terms, which govern your use of that
+    app.
+  </p>
+
+  <h2>3. Our brands</h2>
+  <p>
+    Cenovya Labs, Nutovia, Smart Gamers, and Hoof &amp; Claw, along with the content and artwork on
+    this site, belong to {entity.legalName}.
+  </p>
+
+  <h2>4. Links out</h2>
+  <p>
+    This site links to our product sites and to the app stores. We are not responsible for the
+    content or policies of sites we do not operate.
+  </p>
+
+  <h2>5. No warranty</h2>
+  <p>
+    This site is provided as is. We do not warrant that it will be uninterrupted or error free, and
+    nothing on it is professional, medical, or nutritional advice.
+  </p>
+
+  <h2>6. Limitation of liability</h2>
+  <p>
+    To the extent permitted by law, {entity.legalName} is not liable for indirect or consequential
+    damages arising from your use of this site.
+  </p>
+
+  <h2>7. Governing law</h2>
+  <p>{entity.state}.</p>
+
+  <h2>8. Contact</h2>
+  <p><a href={`mailto:${entity.emails.legal}`}>{entity.emails.legal}</a></p>
+</Legal>

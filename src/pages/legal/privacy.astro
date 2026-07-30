@@ -1,0 +1,74 @@
+---
+import Legal from '../../layouts/Legal.astro';
+import { entity } from '../../config';
+---
+
+<Legal
+  title="Privacy Policy - Cenovya Labs"
+  description="How the cenovyalabs.com website handles data. It sets no cookies, runs no third-party trackers, and collects nothing you type."
+  heading="Privacy Policy"
+>
+  <h2>1. Who we are</h2>
+  <p>
+    This site is operated by {entity.legalName}, {entity.legalDescriptor}. Questions about privacy:
+    <a href={`mailto:${entity.emails.legal}`}>{entity.emails.legal}</a>.
+  </p>
+
+  <h2>2. What this policy covers</h2>
+  <p>
+    This policy covers the cenovyalabs.com website only. Our apps have their own privacy policies,
+    which govern the data those apps handle:
+  </p>
+  <ul>
+    <li><a href="https://nutovia.app/privacy.html" rel="noopener">Nutovia privacy policy</a></li>
+    <li><a href="https://hoofandclaw.org/privacy" rel="noopener">Hoof &amp; Claw privacy policy</a></li>
+  </ul>
+
+  <h2>3. What we collect</h2>
+  <p>
+    Nothing you type. There are no accounts, no forms, and no newsletter on this site.
+  </p>
+
+  <h2>4. Analytics</h2>
+  <p>
+    We use Cloudflare Web Analytics, which is cookieless. It records aggregate page views, referring
+    site, country, and device type. It sets no cookies, does not fingerprint your browser, and does
+    not follow you to other sites. We cannot identify you from it.
+  </p>
+
+  <h2>5. Hosting logs</h2>
+  <p>
+    The site is served by Cloudflare, which processes IP addresses in order to deliver and protect
+    the site. This is a standard hosting function and that data is handled under Cloudflare's own
+    policies.
+  </p>
+
+  <h2>6. Email</h2>
+  <p>
+    If you email us, we receive your address and whatever you write. We keep it only as long as
+    needed to answer you and handle any follow-up.
+  </p>
+
+  <h2>7. Cookies</h2>
+  <p>This site sets none.</p>
+
+  <h2>8. Sharing and selling</h2>
+  <p>
+    We do not sell or share personal information. There are no advertising networks, trackers, or
+    third-party pixels on this site.
+  </p>
+
+  <h2>9. Your rights</h2>
+  <p>
+    California residents may request access to, correction of, or deletion of personal information we
+    hold. Email <a href={`mailto:${entity.emails.legal}`}>{entity.emails.legal}</a> and we will
+    respond as required by law. In practice this site holds nothing about you unless you have emailed
+    us.
+  </p>
+
+  <h2>10. Changes</h2>
+  <p>
+    If this policy changes, the effective date above changes with it. Material changes will be noted
+    on this page.
+  </p>
+</Legal>

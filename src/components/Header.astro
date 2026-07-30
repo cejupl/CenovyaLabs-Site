@@ -1,0 +1,35 @@
+---
+import { Image } from 'astro:assets';
+import mark from '../assets/generated/logo-mark.png';
+import { entity } from '../config';
+
+const path = Astro.url.pathname;
+const isCurrent = (href: string) => (path === href || path === `${href}/` ? 'page' : undefined);
+---
+
+<header class="site-header" id="site-header">
+  <div class="container flex items-center justify-between gap-6 py-5">
+    <a href="/" class="flex min-w-0 items-center gap-3 no-underline" aria-label={`${entity.name} home`}>
+      <Image src={mark} alt="" width={36} height={36} densities={[1, 2]} class="h-9 w-9 shrink-0" />
+      <span
+        class="whitespace-nowrap font-[family-name:var(--font-display)] text-[0.8125rem] font-normal uppercase tracking-[0.18em] text-forest-900 sm:text-[0.9375rem] sm:tracking-[0.22em]"
+      >
+        Cenovya<span class="text-leaf-600"> Labs</span>
+      </span>
+    </a>
+
+    <nav class="flex items-center gap-7" aria-label="Primary">
+      <a href="/about" class="nav-link" aria-current={isCurrent('/about')}>About</a>
+      <a href="/contact" class="nav-link" aria-current={isCurrent('/contact')}>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Hairline under the header appears only once the page has moved - keeps the
+  // top of the page completely clean.
+  const header = document.getElementById('site-header');
+  const sync = () => header?.setAttribute('data-scrolled', String(window.scrollY > 8));
+  sync();
+  window.addEventListener('scroll', sync, { passive: true });
+</script>

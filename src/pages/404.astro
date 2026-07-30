@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import ArrowLink from '../components/ArrowLink.astro';
+---
+
+<Base title="Page not found - Cenovya Labs" description="That page doesn't exist.">
+  <section class="container flex min-h-[52vh] flex-col justify-center py-24">
+    <p class="eyebrow">404</p>
+    <h1 class="display display--page mt-6">That page doesn't exist.</h1>
+    <p class="prose-muted mt-6 max-w-md">
+      It may have moved, or the link may be wrong. The company sits at three pages, so home is never
+      far.
+    </p>
+    <div class="mt-10 flex flex-wrap gap-x-10 gap-y-4">
+      <ArrowLink href="/" label="Home" />
+      <ArrowLink href="/contact" label="Contact" />
+    </div>
+  </section>
+</Base>

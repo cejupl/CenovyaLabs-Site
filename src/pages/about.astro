@@ -1,0 +1,124 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import ArrowLink from '../components/ArrowLink.astro';
+import lockup from '../assets/generated/logo-lockup.png';
+import { entity } from '../config';
+import { commitments, operations } from '../data/brands';
+---
+
+<Base
+  title="About - Cenovya Labs"
+  description="Cenovya Labs LLC is a California software company publishing consumer applications across health and games, under the Nutovia and Smart Gamers labels."
+>
+  {/* ------------------------------------------------------------ intro --- */}
+  <section class="container pb-16 pt-20 sm:pt-28">
+    <p class="eyebrow" data-reveal>About</p>
+    <h1 class="display display--page mt-6 max-w-3xl" data-reveal style="--reveal-delay: 60ms">
+      Built to last longer than a launch.
+    </h1>
+  </section>
+
+  {/* ------------------------------------------------------- positioning --- */}
+  <section class="container pb-20 sm:pb-28">
+    <div class="measure space-y-6" data-reveal>
+      <p class="lede">
+        Cenovya Labs is a software company based in California. It designs and publishes consumer
+        applications, currently across two categories, health and games, with further sectors
+        planned as the company grows.
+      </p>
+      <p class="prose-muted">
+        Each product runs under its own label. Nutovia covers health and nutrition. Smart Gamers
+        covers games. New labels are added when a category is worth committing to properly, not
+        before.
+      </p>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------------------- mark --- */}
+  <section class="border-y border-line bg-paper-soft">
+    <div class="container flex justify-center py-16 sm:py-20">
+      <Image
+        src={lockup}
+        alt={`${entity.legalName} logo`}
+        width={340}
+        densities={[1, 2]}
+        class="h-auto w-[15rem] sm:w-[21rem]"
+        data-reveal
+      />
+    </div>
+  </section>
+
+  {/* -------------------------------------------------------- operations --- */}
+  <section class="section">
+    <div class="container">
+      <div data-reveal>
+        <p class="eyebrow">What we operate</p>
+        <h2 class="display display--section mt-3">Brands and titles.</h2>
+      </div>
+
+      <dl class="mt-12">
+        {
+          operations.map((op, i) => (
+            <div
+              class="grid gap-2 border-t border-line py-7 sm:grid-cols-[13rem_1fr_auto] sm:items-baseline sm:gap-8"
+              data-reveal
+              style={`--reveal-delay: ${i * 70}ms`}
+            >
+              <dt class="display text-lg">{op.brand}</dt>
+              <dd class="prose-muted text-[0.9375rem]">{op.what}</dd>
+              <dd class="text-sm">
+                <ArrowLink href={op.url} label={op.urlLabel} external />
+              </dd>
+            </div>
+          ))
+        }
+        <div class="border-t border-line"></div>
+      </dl>
+    </div>
+  </section>
+
+  {/* ------------------------------------------------------ commitments --- */}
+  <section class="section border-t border-line">
+    <div class="container">
+      <div data-reveal>
+        <p class="eyebrow">How we stand behind it</p>
+        <h2 class="display display--section mt-3">What you can hold us to.</h2>
+      </div>
+
+      <div class="mt-14 grid gap-x-12 gap-y-10 sm:grid-cols-2">
+        {
+          commitments.map((commitment, i) => (
+            <div data-reveal style={`--reveal-delay: ${i * 70}ms`}>
+              <div class="mb-5 h-px w-full bg-line" />
+              <h3 class="display text-lg">{commitment.title}</h3>
+              <p class="prose-muted mt-3 text-[0.9375rem]">{commitment.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  {/* ---------------------------------------------------------- company --- */}
+  <section class="section border-t border-line bg-paper-soft">
+    <div class="container">
+      <div class="measure" data-reveal>
+        <p class="eyebrow">The company</p>
+        <div class="mt-6 space-y-5">
+          <p class="lede">
+            {entity.legalName} is {entity.legalDescriptor}. It owns and operates the brands above and
+            is the developer of record on the App Store and Google Play.
+          </p>
+          <p class="prose-muted">
+            Nutovia and Smart Gamers are brands of {entity.legalName}, not separate companies.
+          </p>
+        </div>
+        <div class="mt-10 flex flex-wrap gap-x-10 gap-y-4">
+          <ArrowLink href="/contact" label="Contact" />
+          <ArrowLink href="/legal/privacy" label="Privacy policy" />
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
