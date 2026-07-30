@@ -39,7 +39,7 @@ the umbrella site small enough that it stays accurate.
 Five pages total.
 
 ```
-/                 home     - who we are, the two labels, how we work
+/                 home     - who we are, the brand cards, how we work
 /about            about    - founder story, what we operate, entity facts
 /contact          contact  - email routing
 /legal/privacy    site-only privacy policy
@@ -302,8 +302,8 @@ this site.
 
 ## 7. SEO
 
-- Title: `Cenovya Labs - a small software studio in California`
-- Description: `Cenovya Labs LLC builds consumer apps under two labels: Nutovia for health and Smart Gamers for games. Privacy-first, no ads, no trackers.`
+- Title: `Cenovya Labs - a software company in California`
+- Description: `Cenovya Labs LLC builds consumer apps across health and games, under the Nutovia and Smart Gamers labels. Privacy-first, no ads, no trackers.`
 - One OG image, company mark on a plain background.
 - The product domains keep their own SEO. This site should not compete with
   them for "Nutovia" or "Hoof & Claw" queries - the brand cards link out with
@@ -351,5 +351,6 @@ Not part of this site, but they close the entity trail and should ship near it:
 3. **Northwest address** - can the registered-agent address be published as a
    business address, or is that the paid virtual-address product? Only affects
    App Store trader info now that the footer is email-only.
-4. **Founder name** - the About draft says "I'm Ceju". Confirm the name you want
-   in public, or drop the name and open with "Cenovya Labs is my studio".
+4. ~~Founder name~~ **Decided 2026-07-30:** no founder name anywhere on the
+   site. It is already public in the California filing, which is a separate
+   surface, and nothing here - App Store, legal pages, trust - requires it.
