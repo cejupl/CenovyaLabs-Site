@@ -63,10 +63,10 @@ No product pages. No blog. No email capture. No commerce.
 > Cenovya Labs builds consumer applications across health and games, with further
 > sectors to come.
 >
-> Each is built on current, actively supported technology, tested before release
-> and maintained after it. Security and data protection are part of the design
-> rather than a later addition, and support comes directly from the company that
-> built the product.
+> Built on modern, actively supported technology, each product is rigorously
+> tested, continuously maintained, and designed with security and data protection
+> at its core. Customers also receive direct support from the company that built
+> it.
 >
 > Every product follows the same rules: no ad SDKs, no data brokers, no dark
 > patterns.
