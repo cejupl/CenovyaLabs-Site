@@ -65,8 +65,8 @@ No product pages. No blog. No email capture. No commerce.
 >
 > Built on modern, actively supported technology, each product is rigorously
 > tested, continuously maintained, and designed with security and data protection
-> at its core. Customers also receive direct support from the company that built
-> it.
+> at its core. Customers receive timely, reliable support throughout the product
+> lifecycle.
 >
 > Every product follows the same rules: no ad SDKs, no data brokers, no dark
 > patterns.
