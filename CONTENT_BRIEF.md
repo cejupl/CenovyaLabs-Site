@@ -56,11 +56,18 @@ No product pages. No blog. No email capture. No commerce.
 
 **Eyebrow:** Cenovya Labs LLC
 
-**H1:** A software company in California.
+**H1:** Software worth keeping.
 
-**Body:** Nutovia makes food and health tools. Smart Gamers publishes social
-games. Both follow the same rules: no ad SDKs, no data brokers, no dark
-patterns.
+**Body:** Cenovya Labs builds consumer applications across health and games, with
+further sectors to come. Every product follows the same rules: no ad SDKs, no
+data brokers, no dark patterns.
+
+> **Revised 2026-07-30 (second pass).** The hero no longer names the products -
+> the brand cards do that one scroll down, and naming them twice made the
+> landing page read like a product page rather than a company one. The headline
+> now carries the same longevity idea as the About page without repeating its
+> wording, and says nothing about size or category, so it survives any future
+> expansion. The SEO title keeps "a software company in California" for search.
 
 > **Revised 2026-07-30.** The site states no headcount anywhere, in either
 > direction. No "one person", and equally no "our team" or "our engineers".
