@@ -25,10 +25,23 @@ import { brands, principles } from '../data/brands';
 
       <p class="lede mt-8 max-w-2xl" data-reveal style="--reveal-delay: 130ms">
         Cenovya Labs builds consumer applications across health and games, with further sectors to
-        come. Every product follows the same rules: no ad SDKs, no data brokers, no dark patterns.
+        come.
       </p>
 
-      <div class="mt-12 flex flex-wrap items-center gap-x-10 gap-y-4" data-reveal style="--reveal-delay: 200ms">
+      {/* Set below the lede rather than at its size - three paragraphs of hero-scale
+          type would read as a wall. The descent headline > lede > detail is the point. */}
+      <div class="mt-6 max-w-xl space-y-4" data-reveal style="--reveal-delay: 190ms">
+        <p class="prose-muted">
+          Each is built on current, actively supported technology, tested before release and
+          maintained after it. Security and data protection are part of the design rather than a
+          later addition, and support comes directly from the company that built the product.
+        </p>
+        <p class="prose-muted">
+          Every product follows the same rules: no ad SDKs, no data brokers, no dark patterns.
+        </p>
+      </div>
+
+      <div class="mt-12 flex flex-wrap items-center gap-x-10 gap-y-4" data-reveal style="--reveal-delay: 250ms">
         <ArrowLink href="/about" label="About the company" />
         <ArrowLink href="/contact" label="Get in touch" />
       </div>

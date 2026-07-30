@@ -58,9 +58,23 @@ No product pages. No blog. No email capture. No commerce.
 
 **H1:** Software worth keeping.
 
-**Body:** Cenovya Labs builds consumer applications across health and games, with
-further sectors to come. Every product follows the same rules: no ad SDKs, no
-data brokers, no dark patterns.
+**Body** - three paragraphs, set as a descent (lede, then two at body size):
+
+> Cenovya Labs builds consumer applications across health and games, with further
+> sectors to come.
+>
+> Each is built on current, actively supported technology, tested before release
+> and maintained after it. Security and data protection are part of the design
+> rather than a later addition, and support comes directly from the company that
+> built the product.
+>
+> Every product follows the same rules: no ad SDKs, no data brokers, no dark
+> patterns.
+
+*The middle paragraph is claim-checkable, which is the only reason it is there:
+both codebases run test gates before release, ship scoped security rules, and
+carry a published support address. Nothing in it asserts headcount, awards, or
+user numbers.*
 
 > **Revised 2026-07-30 (second pass).** The hero no longer names the products -
 > the brand cards do that one scroll down, and naming them twice made the
