@@ -71,14 +71,14 @@ export const operations = [
 ];
 
 /**
- * Support routing. The first two addresses are already live on the product
- * sites and in the shipped app privacy policies - do not change them here
- * without changing them there.
+ * Support routing, in the order shown on /contact. The two product addresses
+ * are also published in the shipped app privacy policies - do not change them
+ * here without changing them there, or the store-listed contact goes stale.
  */
 export const contacts = [
-  { for: 'Nutovia app support, bugs, data requests', email: 'admin@nutovia.app' },
-  { for: 'Hoof & Claw support, bugs, playtest feedback', email: 'admin@smartgamers.org' },
   { for: 'Company, press, partnerships', email: 'hello@cenovyalabs.com' },
+  { for: 'Nutovia app support, bugs, data requests', email: 'support@nutovia.app' },
+  { for: 'Hoof & Claw support, bugs, playtest feedback', email: 'support@smartgamers.org' },
   { for: 'Legal, privacy requests, takedowns', email: 'legal@cenovyalabs.com' },
 ];
 

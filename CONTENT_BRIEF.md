@@ -204,13 +204,19 @@ answer.
 
 | For | Address |
 |---|---|
-| Nutovia app support, bugs, data requests | admin@nutovia.app |
-| Hoof & Claw support, bugs, playtest feedback | admin@smartgamers.org |
 | Company, press, partnerships | hello@cenovyalabs.com |
+| Nutovia app support, bugs, data requests | support@nutovia.app |
+| Hoof & Claw support, bugs, playtest feedback | support@smartgamers.org |
 | Legal, privacy requests, takedowns | legal@cenovyalabs.com |
 
-*The first two already exist and are live on the product sites. The two new
-ones can be aliases into the same inbox on day one.*
+*Company first, then the two product support routes, then legal. `hello@` and
+`legal@` are aliases on the `admin@cenovyalabs.com` mailbox at Namecheap
+Private Email.*
+
+*Changed 2026-07-30: the product addresses moved from `admin@` to `support@`.
+Both are also published in the shipped app privacy policies (Nutovia-Site,
+HoofAndClaw-Site) - those must change with this, or the store-listed contact
+points at an address nobody reads.*
 
 **No mailing address or phone number on this site.** Those live in App Store
 Connect and Play Console trader information, where they are actually required.
