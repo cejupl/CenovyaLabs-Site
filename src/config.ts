@@ -15,7 +15,7 @@ export const entity = {
   /** Year the copyright line starts from. */
   founded: 2026,
 
-  tagline: 'A California software company building consumer apps across health and games.',
+  tagline: 'A California software company building consumer apps across different sectors.',
 
   /**
    * Email is the only public channel. No mailing address or phone on the site -

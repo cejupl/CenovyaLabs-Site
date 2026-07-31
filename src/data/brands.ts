@@ -29,7 +29,7 @@ export const brands: Brand[] = [
     category: 'Health',
     blurb:
       'Food tools for families. The Nutovia app scans any barcode or photographs a label in any language, returns an honest 0-100 health score with every reason explained, and finds healthier swaps at the stores you actually shop.',
-    status: 'Free. iOS and Android.',
+    status: 'In development. iOS and Android.',
     url: 'https://nutovia.app',
     urlLabel: 'nutovia.app',
     note: 'Nutovia provides general nutrition information, not medical advice.',
@@ -41,7 +41,7 @@ export const brands: Brand[] = [
     category: 'Games',
     blurb:
       'Our games label. First title: Hoof & Claw, a board game and companion app of social deduction on the savanna. Friends by day, predators by night. 6-20 players, 15-45 minutes, ages 13+.',
-    status: 'In development.',
+    status: 'In development. iOS and Android.',
     url: 'https://hoofandclaw.org',
     urlLabel: 'hoofandclaw.org',
     accent: 'forest',

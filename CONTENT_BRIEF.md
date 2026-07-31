@@ -40,7 +40,7 @@ Five pages total.
 
 ```
 /                 home     - who we are, the brand cards, how we work
-/about            about    - founder story, what we operate, entity facts
+/about            about    - positioning, commitments, what we operate, entity facts
 /contact          contact  - email routing
 /legal/privacy    site-only privacy policy
 /legal/terms      site-only terms
@@ -60,8 +60,7 @@ No product pages. No blog. No email capture. No commerce.
 
 **Body** - three paragraphs, set as a descent (lede, then two at body size):
 
-> Cenovya Labs builds consumer applications across health and games, with further
-> sectors to come.
+> Cenovya Labs builds consumer applications across different sectors.
 >
 > Built on modern, actively supported technology, each product is rigorously
 > tested, continuously maintained, and designed with security and data protection
@@ -93,13 +92,17 @@ user numbers.*
 
 ### Section: What we build
 
+Heading: **Health and games.** followed on the same line by **More sectors to
+come.** at half the heading's size, in muted grey. The categories name what
+exists today; the kicker keeps the section from reading as a ceiling.
+
 **Card 1 - Nutovia** *(label: Health)*
 
 > Food tools for families. The Nutovia app scans any barcode or photographs a
 > label in any language, returns an honest 0-100 health score with every reason
 > explained, and finds healthier swaps at the stores you actually shop.
 >
-> Free. iOS and Android.
+> In development. iOS and Android.
 >
 > **nutovia.app →**
 >
@@ -111,7 +114,7 @@ user numbers.*
 > social deduction on the savanna. Friends by day, predators by night.
 > 6-20 players, 15-45 minutes, ages 13+.
 >
-> In development.
+> In development. iOS and Android.
 >
 > **smartgamers.org →**
 
@@ -197,10 +200,12 @@ label is ever spun out into its own entity.*
 
 ## 3. Contact
 
-**H1:** Contact
+**Eyebrow:** Contact
 
-**Lede:** Email is the only channel. Pick the one that gets you the fastest
-answer.
+**H1:** Email us directly.
+
+**Lede:** Pick the address that gets you the fastest answer. App support goes to
+the app it belongs to.
 
 | For | Address |
 |---|---|
