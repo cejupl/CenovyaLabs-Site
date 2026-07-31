@@ -44,6 +44,7 @@ export const brands: Brand[] = [
     status: 'In development. iOS and Android.',
     url: 'https://hoofandclaw.org',
     urlLabel: 'hoofandclaw.org',
+    note: 'Smart Gamers is the game label for all our games.',
     accent: 'forest',
   },
 ];

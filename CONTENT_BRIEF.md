@@ -117,6 +117,8 @@ exists today; the kicker keeps the section from reading as a ceiling.
 > In development. iOS and Android.
 >
 > **smartgamers.org →**
+>
+> *Smart Gamers is the game label for all our games.*
 
 *Interim: smartgamers.org is an email domain today, not a site. Until the games
 hub exists, this card points at hoofandclaw.org. Swapping it later is one `url`
