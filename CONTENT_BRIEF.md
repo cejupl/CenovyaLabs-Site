@@ -56,7 +56,7 @@ No product pages. No blog. No email capture. No commerce.
 
 **Eyebrow:** Cenovya Labs LLC
 
-**H1:** Software worth keeping.
+**H1:** Software made to matter.
 
 **Body** - three paragraphs, set as a descent (lede, then two at body size):
 
