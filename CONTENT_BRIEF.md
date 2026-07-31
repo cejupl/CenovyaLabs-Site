@@ -148,7 +148,7 @@ things properly than many halfway.
 
 **Eyebrow:** About
 
-**H1:** Built to last longer than a launch.
+**H1:** Purpose behind every product.
 
 ### Positioning
 
