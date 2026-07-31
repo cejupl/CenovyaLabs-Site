@@ -69,6 +69,13 @@ body {
   max-width: 44rem;
 }
 
+/* A lede is one sentence, not a paragraph, so it tolerates a longer line than
+   body copy does. The extra 2rem is what keeps the home hero's opening sentence
+   on a single line at laptop widths - it needs 44.8rem. */
+.lede.measure {
+  max-width: 46rem;
+}
+
 .section {
   padding-block: clamp(4.5rem, 9vw, 8rem);
 }
@@ -99,8 +106,10 @@ body {
   text-wrap: balance;
 }
 
+/* Capped so the hero headline sets on a single line at laptop widths inside the
+   68rem container. Raising the max re-introduces a wrap around 1280-1440px. */
 .display--hero {
-  font-size: clamp(2.75rem, 7.2vw, 5.25rem);
+  font-size: clamp(2.5rem, 6.4vw, 4.5rem);
 }
 
 .display--page {
